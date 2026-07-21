@@ -111,13 +111,13 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* ── Right: Profile photo ── */}
+          {/* ── Right: Profile photo (Fully Mobile Responsive) ── */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.85, x: 40 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
+            initial={{ opacity: 0, scale: 0.85, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.75, ease: "easeOut" }}
             whileHover="hover"
-            className="group relative hidden flex-shrink-0 cursor-pointer lg:flex lg:items-center lg:justify-center"
+            className="group relative flex flex-shrink-0 cursor-pointer items-center justify-center"
           >
             {/* Outer glow - intensifies on hover */}
             <motion.div
@@ -127,17 +127,17 @@ export default function Hero() {
               transition={{ duration: 0.4 }}
               style={{
                 position: "absolute",
-                inset: "-20px",
+                inset: "-16px",
                 borderRadius: "9999px",
                 background:
                   "radial-gradient(ellipse at center, rgba(0,255,136,0.28) 0%, rgba(56,189,248,0.20) 55%, transparent 75%)",
-                filter: "blur(22px)",
+                filter: "blur(20px)",
                 zIndex: 0,
                 opacity: 0.5,
               }}
             />
 
-            {/* Spinning gradient ring - speeds up slightly on hover */}
+            {/* Spinning gradient ring */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
@@ -162,18 +162,14 @@ export default function Hero() {
               }}
             />
 
-            {/* Photo Frame Container with Spring Animation */}
+            {/* Photo Frame Container with Responsive Width/Height */}
             <motion.div
               variants={{
                 hover: { scale: 1.05, rotate: 2, y: -4 },
               }}
               transition={{ type: "spring", stiffness: 300, damping: 15 }}
+              className="relative h-56 w-56 overflow-hidden rounded-full sm:h-72 sm:w-72 lg:h-[340px] lg:w-[340px]"
               style={{
-                position: "relative",
-                width: "340px",
-                height: "340px",
-                borderRadius: "9999px",
-                overflow: "hidden",
                 zIndex: 3,
                 boxShadow: "0 20px 40px rgba(0,0,0,0.4)",
               }}
