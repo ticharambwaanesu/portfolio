@@ -5,7 +5,7 @@ export const skillGroups = [
   },
   {
     label: "Systems & DevOps",
-    items: ["Linux", "Windows", "Machine Learning Basics", "Computer Vision", "CI/CD Fundamentals"],
+    items: ["Linux", "Windows", "Machine Learning", "Computer Vision", "TensorFlow", "CI/CD Fundamentals"],
   },
   {
     label: "Embedded Systems & IoT",

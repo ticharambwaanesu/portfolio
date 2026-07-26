@@ -65,4 +65,28 @@ export const projects = [
     demo: "#",
     metric: "Client-delivered, freelance turnaround",
   },
+  {
+    id: "mobile-object-detection",
+    title: "Mobile Object Detection App",
+    category: "AI / Mobile",
+    description:
+      "A real-time object detection mobile application built using TensorFlow and Expo. Features camera-based live detection powered by pre-trained COCO-SSD models, optimized specifically for high-throughput, low-latency performance in mobile environments.",
+    stack: ["TensorFlow", "React Native", "Expo", "COCO-SSD", "Computer Vision"],
+    github: "#",
+    demo: "#",
+    metric: "Real-time camera detection & mobile optimization",
+  },
+  {
+    id: "robotic-welding-arm",
+    title: "Automated Robotic Welding Arm",
+    category: "Robotics & CAD",
+    description:
+      "3D CAD modeling and mechanical design of a multi-axis robotic arm engineered for precision industrial welding. Modeled complete assembly kinematics in SolidWorks, evaluating joint tolerances, structural payload capacity, and torch reach envelopes.",
+    stack: ["SolidWorks", "3D CAD", "Robotics Design", "Kinematics", "Mechanical Engineering"],
+    github: "#",
+    demo: "#",
+    metric: "Multi-axis kinematics & reach envelope analysis",
+  },
 ];
+
+

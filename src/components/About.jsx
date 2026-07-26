@@ -40,7 +40,7 @@ export default function About() {
             <div className="mt-8 grid grid-cols-3 gap-4 border-t border-[var(--color-border)] pt-6">
               {[
                 { value: "3+", label: "Years building" },
-                { value: "6", label: "Released projects" },
+                { value: "8", label: "Released projects" },
                 { value: "2028", label: "Graduation" },
               ].map((stat) => (
                 <div key={stat.label}>
